@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Experience — Portfolio</title>
+<meta name="description" content="Work experience and education" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Fraunces:wght@450;500;600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  rel="stylesheet"
+/>
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="app" data-loading="true">
+
+  <!-- Skeleton shown while JSON data loads -->
+  <div class="skeleton" aria-hidden="true">
+    <div class="bar w-40"></div>
+    <div class="bar w-100" style="margin-top:2rem;"></div>
+    <div class="bar w-70"></div>
+  </div>
+
+  <div class="content">
+    <!-- Nav -->
+    <nav class="nav">
+      <div class="wrap" id="nav-links"></div>
+    </nav>
+
+    <!-- Experience -->
+    <section class="section section-first" id="experience" aria-labelledby="exp-label">
+      <div class="wrap">
+        <h2 class="section-heading" id="exp-label">Experiences</h2>
+        <div class="card-list" id="exp-list"></div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education" aria-labelledby="edu-label">
+      <div class="wrap">
+        <h2 class="section-heading" id="edu-label">Educations</h2>
+        <div class="card-list" id="edu-list"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap" id="footer-text"></div>
+    </footer>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
