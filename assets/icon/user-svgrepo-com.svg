@@ -1,8 +1,1 @@
-<<<<<<< HEAD
-<svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="20" height="24" fill="white"/>
-<path d="M2 22V20.75C2 18.4294 2.84285 16.2038 4.34315 14.5628C5.84344 12.9219 7.87827 12 10 12M10 12C12.1217 12 14.1566 12.9219 15.6569 14.5628C17.1571 16.2038 18 18.4294 18 20.75V22M10 12C11.2124 12 12.3752 11.4732 13.2325 10.5355C14.0898 9.59785 14.5714 8.32608 14.5714 7C14.5714 5.67392 14.0898 4.40215 13.2325 3.46447C12.3752 2.52678 11.2124 2 10 2C8.78758 2 7.62482 2.52678 6.76751 3.46447C5.9102 4.40215 5.42857 5.67392 5.42857 7C5.42857 8.32608 5.9102 9.59785 6.76751 10.5355C7.62482 11.4732 8.78758 12 10 12Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-=======
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
->>>>>>> 31831ecc0db043f3c4f65239a1ed3cb9c0ff58e9
