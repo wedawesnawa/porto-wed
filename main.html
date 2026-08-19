@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio</title>
+<meta name="description" content="Personal portfolio — Junior Frontend Developer" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Fraunces:wght@450;500;600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  rel="stylesheet"
+/>
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="app" data-loading="true">
+
+  <!-- Skeleton shown while JSON data loads -->
+  <div class="skeleton" aria-hidden="true">
+    <div class="w-40 bar"></div>
+    <div class="bar w-70" style="margin-top:1.5rem;"></div>
+    <div class="w-40 bar"></div>
+    <div class="bar w-100" style="margin-top:2rem;"></div>
+    <div class="bar w-70"></div>
+  </div>
+
+  <div class="content">
+    <!-- Nav -->
+    <nav class="nav">
+      <div class="wrap" id="nav-links"></div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+      <div class="wrap">
+        <p class="status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="status-label"></span>
+        </p>
+        <h1 id="hero-greeting"></h1>
+        <p class="role" id="hero-role"></p>
+        <button class="btn-hire" id="hero-cta" type="button"></button>
+      </div>
+    </header>
+
+    <!-- Contact -->
+    <section class="section" aria-labelledby="contact-label">
+      <div class="wrap">
+        <p class="section-label" id="contact-label">Contact Me</p>
+        <div class="contact-list" id="contact-list"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-label">
+      <div class="wrap">
+        <p class="section-label" id="about-label">About Me</p>
+        <div class="about-text">
+          <p id="about-text"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stacks -->
+    <section class="section" aria-labelledby="stacks-label">
+      <div class="wrap">
+        <p class="section-label" id="stacks-label">Stacks</p>
+        <div class="stacks-grid" id="stacks-grid"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap" id="footer-text"></div>
+    </footer>
+
+    <div class="modal-overlay" id="hire-modal" hidden>
+      <div class="modal-backdrop" data-modal-close></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Contact card">
+        <button class="modal-close" type="button" data-modal-close aria-label="Close">&times;</button>
+        <img
+          class="modal-image"
+          src="assets/pic/cardname.png"
+          alt="Kartu nama — informasi kontak"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

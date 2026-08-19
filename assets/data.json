@@ -1,0 +1,89 @@
+{
+  "status": "OPEN TO WORK",
+  "nav": [
+    { "label": "About", "icon": "user-svgrepo-com.svg", "href": "main.html" },
+    { "label": "Experiences", "icon": "git-pull-request-svgrepo-com.svg", "href": "experience.html" },
+    { "label": "Projects", "icon": "folder-svgrepo-com.svg", "href": "projects.html" }
+  ],
+  "profile": {
+    "greeting": "Halo, I'm Weda Wesnawa",
+    "role": "Junior Frontend Developer",
+    "cta": "Hire me"
+  },
+  "contact": [
+    { "label": "LinkedIn", "icon": "linkedin-svgrepo-com.svg", "url": "https://linkedin.com/in/wed360" },
+    { "label": "Github", "icon": "github-svgrepo-com.svg", "url": "https://github.com/wedawesnawa" },
+    { "label": "Email", "icon": "mail-svgrepo-com.svg", "url": "mailto:komangweda360@gmail.com" },
+    { "label": "Reddit", "icon": "reddit-svgrepo-com.svg", "url": "https://www.reddit.com/user/Emotional-Age-2743/" }
+  ],
+  "about": "It's a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+  "stacks": [
+    { "name": "React", "icon": "react-svgrepo-com.svg" },
+    { "name": "Angular", "icon": "angularjs-svgrepo-com.svg" },
+    { "name": "Java", "icon": "java-svgrepo-com.svg" },
+    { "name": "MySQL", "icon": "mysql-svgrepo-com.svg" },
+    { "name": ".NET", "icon": "dot-net-svgrepo-com.svg" },
+    { "name": "PHP", "icon": "php01-svgrepo-com.svg" },
+    { "name": "Laravel", "icon": "laravel-svgrepo-com.svg" },
+    { "name": "TypeScript", "icon": "typescript-svgrepo-com.svg" },
+    { "name": "Tailwind CSS", "icon": "tailwind-css-svgrepo-com.svg" }
+  ],
+  "experience": [
+    {
+      "role": "Junior Frontend Developer",
+      "company": "PT Digital Nusantara",
+      "period": "April 2025 - Present",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal."
+    },
+    {
+      "role": "Android Chort",
+      "company": "Bangkit Academy",
+      "period": "April 2024 - September 2024",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal."
+    },
+    {
+      "role": "QA Engineering Intern",
+      "company": "PT. Sanata System",
+      "period": "April 2024 - September 2024",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "school": "Udayana University",
+      "period": "August 2021 - August 2025",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Personal Project",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal",
+      "url": "#",
+      "media": null
+    },
+    {
+      "title": "Personal Project",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal",
+      "url": "#",
+      "media": {
+        "type": "gif",
+        "src": "https://raw.githubusercontent.com/wedawesnawa/frontend-deep-music/main/public/Video-Project-10.gif",
+        "alt": "Project preview GIF",
+        "placeholder": "project 1"
+      }
+    },
+    {
+      "title": "Personal Project",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal",
+      "url": "#",
+      "media": {
+        "type": "gif",
+        "src": "",
+        "alt": "Project preview GIF",
+        "placeholder": "project 1"
+      }
+    }
+  ]
+}

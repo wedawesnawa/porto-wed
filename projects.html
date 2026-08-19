@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects — Portfolio</title>
+<meta name="description" content="Selected projects" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Fraunces:wght@450;500;600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  rel="stylesheet"
+/>
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="app" data-loading="true">
+
+  <!-- Skeleton shown while JSON data loads -->
+  <div class="skeleton" aria-hidden="true">
+    <div class="w-40 bar"></div>
+    <div class="bar w-100" style="margin-top:2rem;"></div>
+    <div class="bar w-70"></div>
+  </div>
+
+  <div class="content">
+    <!-- Nav -->
+    <nav class="nav">
+      <div class="wrap" id="nav-links"></div>
+    </nav>
+
+    <!-- Projects -->
+    <section class="section section-first" id="projects" aria-labelledby="projects-label">
+      <div class="wrap">
+        <h2 class="sr-only" id="projects-label">Projects</h2>
+        <div class="projects-list" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap" id="footer-text"></div>
+    </footer>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
