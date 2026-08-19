@@ -1,7 +1,3 @@
-/* ============================================
-   Portfolio — dynamic renderer
-   Fetches assets/data.json and builds the DOM
-   ============================================ */
 
 const ICON_BASE = "assets/icon/";
 
