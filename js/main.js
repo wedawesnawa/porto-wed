@@ -1,3 +1,7 @@
+/* ============================================
+   Portfolio — dynamic renderer
+   Fetches assets/data.json and builds the DOM
+   ============================================ */
 
 const ICON_BASE = "assets/icon/";
 
@@ -121,6 +125,49 @@ function renderEducation(education) {
   });
 }
 
+const LOADING_GIF = "assets/pic/loading.gif";
+
+function buildMediaBox(media, title) {
+  const hasSrc = media.src && media.src.trim() !== "";
+
+  if (!hasSrc) {
+    return el("div", { class: "project-media" }, [
+      el("p", { class: "project-media-placeholder", text: media.placeholder || "" }),
+    ]);
+  }
+
+  const img = el("img", {
+    class: "project-media-img",
+    src: media.src,
+    alt: media.alt || title,
+  });
+
+  const loadingText = el("p", { class: "loading-text", text: "LOADING" });
+  const overlay = el("div", { class: "project-media-loading" }, [
+    el("img", { class: "loading-avatar", src: LOADING_GIF, alt: "" }),
+    loadingText,
+  ]);
+
+  const box = el("div", { class: "project-media" }, [img, overlay]);
+
+  const markLoaded = () => box.classList.add("is-loaded");
+  const markError = () => {
+    box.classList.add("is-error");
+    loadingText.textContent = "Gagal memuat gambar";
+  };
+
+  // If the browser already has it cached, "load" may have fired before we
+  // attached the listener — check img.complete and skip straight to loaded.
+  if (img.complete && img.naturalWidth > 0) {
+    markLoaded();
+  } else {
+    img.addEventListener("load", markLoaded);
+    img.addEventListener("error", markError);
+  }
+
+  return box;
+}
+
 function renderProjects(projects) {
   const wrap = document.getElementById("projects-grid");
   if (!wrap) return;
@@ -131,16 +178,7 @@ function renderProjects(projects) {
     ];
 
     if (p.media) {
-      const hasSrc = p.media.src && p.media.src.trim() !== "";
-      const mediaInner = hasSrc
-        ? el("img", {
-            class: "project-media-img",
-            src: p.media.src,
-            alt: p.media.alt || p.title,
-            loading: "lazy",
-          })
-        : el("p", { class: "project-media-placeholder", text: p.media.placeholder || "" });
-      blockChildren.push(el("div", { class: "project-media" }, mediaInner));
+      blockChildren.push(buildMediaBox(p.media, p.title));
     }
 
     blockChildren.push(el("p", { class: "project-block-desc", text: p.description }));

@@ -380,6 +380,7 @@ button { font-family: inherit; }
   max-width: 760px;
 }
 .project-media {
+  position: relative;
   width: 100%;
   min-height: 340px;
   border-radius: 6px;
@@ -394,6 +395,11 @@ button { font-family: inherit; }
   min-height: 340px;
   object-fit: cover;
   border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.project-media.is-loaded .project-media-img {
+  opacity: 1;
 }
 .project-media-placeholder {
   font-family: var(--font-display);
@@ -404,6 +410,49 @@ button { font-family: inherit; }
   margin: 0;
   padding: 2.5rem 2.5rem 2.5rem 3.25rem;
   max-width: 60%;
+}
+
+/* Loading overlay shown while a project GIF/image is still downloading */
+.project-media-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  transition: opacity 0.3s ease;
+}
+.project-media.is-loaded .project-media-loading {
+  opacity: 0;
+  pointer-events: none;
+}
+.loading-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  border: 3px solid #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+}
+.loading-text {
+  margin: 0;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 0.06em;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+.project-media.is-error .loading-avatar {
+  display: none;
+}
+.project-media.is-error .loading-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--ink-soft);
+  text-shadow: none;
 }
 
 /* ---------- Footer ---------- */
