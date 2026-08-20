@@ -72,7 +72,12 @@
         "src": "https://raw.githubusercontent.com/wedawesnawa/frontend-deep-music/main/public/Video-Project-10.gif",
         "alt": "Project preview GIF",
         "placeholder": "project 1"
-      }
+      },
+      "tags": [
+        { "name": "React", "icon": "react-svgrepo-com.svg" },
+        { "name": "Typescript", "icon": "typescript-svgrepo-com.svg" },
+        { "name": "MySQL", "icon": "mysql-svgrepo-com.svg" }
+      ]
     },
     {
       "title": "Personal Project",
@@ -83,7 +88,8 @@
         "src": "",
         "alt": "Project preview GIF",
         "placeholder": "project 1"
-      }
+      },
+      "tags": []
     }
   ]
 }

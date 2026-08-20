@@ -168,6 +168,34 @@ function buildMediaBox(media, title) {
   return box;
 }
 
+function buildDescription(p) {
+  const para = document.createElement("p");
+  para.className = "project-block-desc";
+  para.appendChild(document.createTextNode(p.description + " "));
+
+  if (p.url) {
+    const link = document.createElement("a");
+    link.className = "project-github-link";
+    link.href = p.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = "The project is open source on Github.";
+    para.appendChild(link);
+  }
+
+  return para;
+}
+
+function buildTagsRow(tags) {
+  const pills = tags.map((t) =>
+    el("span", { class: "project-tag" }, [
+      icon(t.icon, ""),
+      el("span", { text: t.name }),
+    ])
+  );
+  return el("div", { class: "project-tags-row" }, pills);
+}
+
 function renderProjects(projects) {
   const wrap = document.getElementById("projects-grid");
   if (!wrap) return;
@@ -181,7 +209,11 @@ function renderProjects(projects) {
       blockChildren.push(buildMediaBox(p.media, p.title));
     }
 
-    blockChildren.push(el("p", { class: "project-block-desc", text: p.description }));
+    blockChildren.push(buildDescription(p));
+
+    if (p.tags && p.tags.length) {
+      blockChildren.push(buildTagsRow(p.tags));
+    }
 
     const block = el("article", { class: "project-block" }, blockChildren);
     wrap.appendChild(block);

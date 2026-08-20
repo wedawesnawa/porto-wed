@@ -412,6 +412,47 @@ button { font-family: inherit; }
   max-width: 60%;
 }
 
+.project-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.25rem 0 0;
+}
+.project-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--ink);
+  background: #fff;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.project-tag:hover {
+  border-color: #c9c9c9;
+  transform: translateY(-1px);
+}
+.project-tag img {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.project-github-link {
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.15s ease, color 0.15s ease;
+}
+.project-github-link:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
 /* Loading overlay shown while a project GIF/image is still downloading */
 .project-media-loading {
   position: absolute;
@@ -552,16 +593,16 @@ button { font-family: inherit; }
 }
 .notfound-digit {
   font-family: var(--font-body);
-  font-weight: 800;
+  font-weight: 900;
   font-size: clamp(4.5rem, 12vw, 6.5rem);
   line-height: 1;
-  color: #9a9a9a;
+  color: #111111;
 }
 .notfound-avatar {
   width: clamp(4.5rem, 12vw, 6.5rem);
   height: clamp(4.5rem, 12vw, 6.5rem);
   border-radius: 50%;
-  border: 12px solid #9a9a9a;
+  border: 8px solid #111111;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -578,7 +619,7 @@ button { font-family: inherit; }
   font-family: var(--font-body);
   font-weight: 800;
   font-size: clamp(1.5rem, 4vw, 2rem);
-  color: #7a7a7a;
+  color: black;
   margin: 0 0 0.75rem;
 }
 .notfound-subtitle {
@@ -592,7 +633,7 @@ button { font-family: inherit; }
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  background: #8a8a8a;
+  background: black;
   color: #fff;
   font-weight: 700;
   font-size: 0.95rem;
