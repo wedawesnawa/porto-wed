@@ -61,7 +61,9 @@ function renderContact(contact) {
   if (!wrap) return;
   wrap.innerHTML = "";
   contact.forEach((c) => {
+    const isMail = c.url.startsWith("mailto:");
     const external = c.url.startsWith("http");
+    const labelSpan = el("span", { text: c.label });
     const item = el(
       "a",
       {
@@ -69,13 +71,41 @@ function renderContact(contact) {
         href: c.url,
         ...(external ? { target: "_blank", rel: "noopener noreferrer" } : {}),
       },
-      [
-        el("span", { class: "icon-badge" }, icon(c.icon, c.label)),
-        el("span", { text: c.label }),
-      ]
+      [el("span", { class: "icon-badge" }, icon(c.icon, c.label)), labelSpan]
     );
+
+    if (isMail) {
+      const email = c.url.replace(/^mailto:/, "");
+      item.addEventListener("click", (e) => copyEmailToClipboard(e, item, labelSpan, email, c.label));
+    }
+
     wrap.appendChild(item);
   });
+}
+
+function copyEmailToClipboard(e, item, labelSpan, email, originalLabel) {
+  if (!navigator.clipboard || !navigator.clipboard.writeText) {
+    return; // clipboard API unavailable — let the mailto: link work normally
+  }
+  e.preventDefault();
+
+  navigator.clipboard
+    .writeText(email)
+    .then(() => showCopiedFeedback(item, labelSpan, originalLabel))
+    .catch(() => {
+      // Clipboard write failed (e.g. permission denied) — fall back to mailto
+      window.location.href = "mailto:" + email;
+    });
+}
+
+function showCopiedFeedback(item, labelSpan, originalLabel) {
+  clearTimeout(item._copyResetTimer);
+  item.classList.add("is-copied");
+  labelSpan.textContent = "Copied!";
+  item._copyResetTimer = setTimeout(() => {
+    item.classList.remove("is-copied");
+    labelSpan.textContent = originalLabel;
+  }, 1600);
 }
 
 function renderAbout(about) {
