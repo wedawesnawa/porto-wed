@@ -496,6 +496,33 @@ button { font-family: inherit; }
   text-shadow: none;
 }
 
+.filter-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.85rem 1.1rem;
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+.filter-banner-text strong { color: var(--ink); }
+.filter-clear {
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 2px;
+  white-space: nowrap;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+.filter-clear:hover { color: var(--accent); text-decoration-color: var(--accent); }
+.projects-empty { font-size: 0.9rem; color: var(--ink-soft); padding: 2rem 0; }
+
 /* ---------- Footer ---------- */
 .footer {
   margin-top: auto;

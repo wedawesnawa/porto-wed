@@ -119,10 +119,15 @@ function renderStacks(stacks) {
   if (!wrap) return;
   wrap.innerHTML = "";
   stacks.forEach((s) => {
-    const chip = el("div", { class: "stack-chip", title: s.name, tabindex: "0" }, [
-      icon(s.icon, s.name),
-      el("span", { class: "stack-name", text: s.name }),
-    ]);
+    const chip = el(
+      "a",
+      {
+        class: "stack-chip",
+        title: "Lihat project dengan " + s.name,
+        href: "projects.html?tag=" + encodeURIComponent(s.name),
+      },
+      [icon(s.icon, s.name), el("span", { class: "stack-name", text: s.name })]
+    );
     wrap.appendChild(chip);
   });
 }
@@ -226,28 +231,75 @@ function buildTagsRow(tags) {
   return el("div", { class: "project-tags-row" }, pills);
 }
 
+// function renderProjects(projects) {
+//   const wrap = document.getElementById("projects-grid");
+//   if (!wrap) return;
+//   wrap.innerHTML = "";
+//   projects.forEach((p) => {
+//     const blockChildren = [
+//       el("h3", { class: "project-block-title", text: p.title }),
+//     ];
+
+//     if (p.media) {
+//       blockChildren.push(buildMediaBox(p.media, p.title));
+//     }
+
+//     blockChildren.push(buildDescription(p));
+
+//     if (p.tags && p.tags.length) {
+//       blockChildren.push(buildTagsRow(p.tags));
+//     }
+
+//     const block = el("article", { class: "project-block" }, blockChildren);
+//     wrap.appendChild(block);
+//   });
+// }
+function buildProjectBlock(p) {
+  const blockChildren = [el("h3", { class: "project-block-title", text: p.title })];
+  if (p.media) blockChildren.push(buildMediaBox(p.media, p.title));
+  blockChildren.push(buildDescription(p));
+  if (p.tags && p.tags.length) blockChildren.push(buildTagsRow(p.tags));
+  return el("article", { class: "project-block" }, blockChildren);
+}
+
+function renderFilterBanner(activeTag, resultCount) {
+  const filterWrap = document.getElementById("projects-filter");
+  if (!filterWrap) return;
+  filterWrap.innerHTML = "";
+  if (!activeTag) return;
+
+  const banner = el("div", { class: "filter-banner" }, [
+    el("span", {
+      class: "filter-banner-text",
+      html: "Menampilkan " + resultCount + " project dengan stack " + activeTag ,
+    }),
+    el("a", { class: "filter-clear", href: "projects.html", text: "Lihat semua project" }),
+  ]);
+  filterWrap.appendChild(banner);
+}
+
 function renderProjects(projects) {
   const wrap = document.getElementById("projects-grid");
   if (!wrap) return;
+
+  const activeTag = new URLSearchParams(location.search).get("tag");
+  let list = projects;
+
+  if (activeTag) {
+    list = projects.filter((p) =>
+      (p.tags || []).some((t) => t.name.toLowerCase() === activeTag.toLowerCase())
+    );
+  }
+
+  renderFilterBanner(activeTag, list.length);
   wrap.innerHTML = "";
-  projects.forEach((p) => {
-    const blockChildren = [
-      el("h3", { class: "project-block-title", text: p.title }),
-    ];
 
-    if (p.media) {
-      blockChildren.push(buildMediaBox(p.media, p.title));
-    }
+  if (activeTag && list.length === 0) {
+    wrap.appendChild(el("p", { class: "projects-empty", text: "Belum ada project dengan stack “" + activeTag + "”." }));
+    return;
+  }
 
-    blockChildren.push(buildDescription(p));
-
-    if (p.tags && p.tags.length) {
-      blockChildren.push(buildTagsRow(p.tags));
-    }
-
-    const block = el("article", { class: "project-block" }, blockChildren);
-    wrap.appendChild(block);
-  });
+  list.forEach((p) => wrap.appendChild(buildProjectBlock(p)));
 }
 
 function renderFooter(profile) {
