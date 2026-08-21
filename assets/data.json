@@ -94,7 +94,7 @@
       ]
     },
     {
-      "title": "Automatic Scheduling Using a Genetic Algorithm",
+      "title": "Automatic Scheduling Using a Genetic Algorithm | 2025",
       "description": "The project aims to replace traditional printed menus with a digital ordering system. Customers can browse the menu, place orders directly through the web application, and submit their orders without waiting for a waiter. The cashier is responsible for managing incoming orders, processing transactions, and serving customers, simplifying restaurant operations through a centralized system.",
       "url": "https://github.com/wedawesnawa/automatic-scheduling-genetic-algorithm",
       "media": {
@@ -108,8 +108,8 @@
         { "name": "Streamlit", "icon": "streamlit-svgrepo-com.svg"}
       ]
     },
-        {
-      "title": "E-Market Fish - Mobile Fishery Products Marketplace",
+    {
+      "title": "E-Market Fish - Mobile Fishery Products Marketplace | 2025",
       "description": "The project aims to replace traditional printed menus with a digital ordering system. Customers can browse the menu, place orders directly through the web application, and submit their orders without waiting for a waiter. The cashier is responsible for managing incoming orders, processing transactions, and serving customers, simplifying restaurant operations through a centralized system.",
       "url": "https://github.com/wedawesnawa/fe_salers_market_fish",
       "media": {
@@ -124,6 +124,23 @@
         { "name": "Go", "icon": "go-svgrepo-com.svg"},
         { "name": "PostgreSQL", "icon": "postgres-svgrepo-com.svg"},
         { "name": "Docker", "icon": "docker-svgrepo-com.svg"}
+      ]
+    },
+      {
+      "title": "Moodify | 2024",
+      "description": "Moodify is a journaling app that supports mental health through a holistic approach. It offers a private space for users to record their thoughts and emotions while keeping entries confidential. The app tracks moods, provides weekly insights, and helps users identify emotional patterns. Additional features include guided relaxation exercises, soothing sounds, mental health tips, and an interactive chatbot for personalized support, making Moodify a trusted companion for emotional well-being.",
+      "url": "https://github.com/wedawesnawa/frontend_moodify",
+      "media": {
+        "type": "gif",
+        "src": "https://raw.githubusercontent.com/wedawesnawa/frontend_moodify/main/app/src/main/res/drawable/Video-Project-7-4%20(1).gif",
+        "alt": "Project preview GIF",
+        "placeholder": "moodify"
+      },
+      "tags": [
+        { "name": "Kotlin", "icon": "kotlin-svgrepo-com.svg"},
+        { "name": "NodeJs", "icon": "node-js-svgrepo-com.svg"},
+        { "name": "ExpressJS", "icon": "express-svgrepo-com.svg"},
+        { "name": "Firebase", "icon": "firebase-svgrepo-com.svg"}
       ]
     },
     {
@@ -145,7 +162,7 @@
       ]
     },
     {
-      "title": "Sistem Persuratan",
+      "title": "Sistem Persuratan | 2024",
       "description": "The application helps users record, manage, and organize incoming and outgoing letters digitally, making correspondence management more efficient and structured, especially when handling a large number of documents.",
       "url": "https://github.com/wedawesnawa/fe_sistem_persuratan",
       "media": {
@@ -163,7 +180,7 @@
       ]
     },
     {
-      "title": "Hotel Management System: Receptionist Role",
+      "title": "Hotel Management System: Receptionist Role | 2023",
       "description": "This repository focuses specifically on the receptionist role and its related features. Other roles within the hotel management system are not implemented in this repository because they are developed separately by other team members.",
       "url": "https://github.com/wedawesnawa/pbw_sistem_manajemen_hotel",
       "media": {
@@ -180,7 +197,7 @@
       ]
     },
     {
-      "title": "Library Book Borrowing System",
+      "title": "Library Book Borrowing System | 2024",
       "description": "Library Book Borrowing System is a web-based application designed to digitize and simplify the book borrowing process in an offline library.",
       "url": "https://github.com/wedawesnawa/sistem-peminjaman-buku",
       "media": {
@@ -198,7 +215,7 @@
       ]
     },
     {
-      "title": "Restaurant Service App",
+      "title": "Restaurant Service App | 2021",
       "description": "The project aims to replace traditional printed menus with a digital ordering system. Customers can browse the menu, place orders directly through the web application, and submit their orders without waiting for a waiter. The cashier is responsible for managing incoming orders, processing transactions, and serving customers, simplifying restaurant operations through a centralized system.",
       "url": "https://github.com/wedawesnawa/app-restaurant-service",
       "media": {
