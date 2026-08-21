@@ -1,7 +1,7 @@
 {
   "status": "OPEN TO WORK",
   "nav": [
-    { "label": "About", "icon": "user-svgrepo-com.svg", "href": "main.html" },
+    { "label": "About", "icon": "user-svgrepo-com.svg", "href": "index.html" },
     { "label": "Experiences", "icon": "git-pull-request-svgrepo-com.svg", "href": "experience.html" },
     { "label": "Projects", "icon": "folder-svgrepo-com.svg", "href": "projects.html" }
   ],

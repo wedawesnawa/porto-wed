@@ -35,13 +35,13 @@ function renderNav(nav) {
   const wrap = document.getElementById("nav-links");
   if (!wrap) return;
   wrap.innerHTML = "";
-  const currentPage = location.pathname.split("/").pop() || "main.html";
+  const currentPage = location.pathname.split("/").pop() || "index.html";
   nav.forEach((item) => {
     const isActive = item.href === currentPage;
     const link = el(
       "a",
       { class: "nav-link" + (isActive ? " is-active" : ""), href: item.href },
-      [icon(item.icon, item.label), el("span", { text: item.label })]
+      [icon(item.icon, item.label), el("span", { text: item.label })],
     );
     wrap.appendChild(link);
   });
@@ -71,12 +71,14 @@ function renderContact(contact) {
         href: c.url,
         ...(external ? { target: "_blank", rel: "noopener noreferrer" } : {}),
       },
-      [el("span", { class: "icon-badge" }, icon(c.icon, c.label)), labelSpan]
+      [el("span", { class: "icon-badge" }, icon(c.icon, c.label)), labelSpan],
     );
 
     if (isMail) {
       const email = c.url.replace(/^mailto:/, "");
-      item.addEventListener("click", (e) => copyEmailToClipboard(e, item, labelSpan, email, c.label));
+      item.addEventListener("click", (e) =>
+        copyEmailToClipboard(e, item, labelSpan, email, c.label),
+      );
     }
 
     wrap.appendChild(item);
@@ -126,7 +128,7 @@ function renderStacks(stacks) {
         title: "Lihat project dengan " + s.name,
         href: "projects.html?tag=" + encodeURIComponent(s.name),
       },
-      [icon(s.icon, s.name), el("span", { class: "stack-name", text: s.name })]
+      [icon(s.icon, s.name), el("span", { class: "stack-name", text: s.name })],
     );
     wrap.appendChild(chip);
   });
@@ -167,7 +169,10 @@ function buildMediaBox(media, title) {
 
   if (!hasSrc) {
     return el("div", { class: "project-media" }, [
-      el("p", { class: "project-media-placeholder", text: media.placeholder || "" }),
+      el("p", {
+        class: "project-media-placeholder",
+        text: media.placeholder || "",
+      }),
     ]);
   }
 
@@ -226,7 +231,7 @@ function buildTagsRow(tags) {
     el("span", { class: "project-tag" }, [
       icon(t.icon, ""),
       el("span", { text: t.name }),
-    ])
+    ]),
   );
   return el("div", { class: "project-tags-row" }, pills);
 }
@@ -255,7 +260,9 @@ function buildTagsRow(tags) {
 //   });
 // }
 function buildProjectBlock(p) {
-  const blockChildren = [el("h3", { class: "project-block-title", text: p.title })];
+  const blockChildren = [
+    el("h3", { class: "project-block-title", text: p.title }),
+  ];
   if (p.media) blockChildren.push(buildMediaBox(p.media, p.title));
   blockChildren.push(buildDescription(p));
   if (p.tags && p.tags.length) blockChildren.push(buildTagsRow(p.tags));
@@ -271,9 +278,13 @@ function renderFilterBanner(activeTag, resultCount) {
   const banner = el("div", { class: "filter-banner" }, [
     el("span", {
       class: "filter-banner-text",
-      html: "Menampilkan " + resultCount + " project dengan stack " + activeTag ,
+      html: "Menampilkan " + resultCount + " project dengan stack " + activeTag,
     }),
-    el("a", { class: "filter-clear", href: "projects.html", text: "Lihat semua project" }),
+    el("a", {
+      class: "filter-clear",
+      href: "projects.html",
+      text: "Lihat semua project",
+    }),
   ]);
   filterWrap.appendChild(banner);
 }
@@ -287,7 +298,9 @@ function renderProjects(projects) {
 
   if (activeTag) {
     list = projects.filter((p) =>
-      (p.tags || []).some((t) => t.name.toLowerCase() === activeTag.toLowerCase())
+      (p.tags || []).some(
+        (t) => t.name.toLowerCase() === activeTag.toLowerCase(),
+      ),
     );
   }
 
@@ -295,7 +308,12 @@ function renderProjects(projects) {
   wrap.innerHTML = "";
 
   if (activeTag && list.length === 0) {
-    wrap.appendChild(el("p", { class: "projects-empty", text: "Belum ada project dengan stack “" + activeTag + "”." }));
+    wrap.appendChild(
+      el("p", {
+        class: "projects-empty",
+        text: "Belum ada project dengan stack “" + activeTag + "”.",
+      }),
+    );
     return;
   }
 
@@ -307,7 +325,11 @@ function renderFooter(profile) {
   if (!node) return;
   const year = new Date().getFullYear();
   node.textContent =
-    "© " + year + " " + profile.greeting.replace("Halo, I'm ", "") + ". Built with HTML, CSS & JS.";
+    "© " +
+    year +
+    " " +
+    profile.greeting.replace("Halo, I'm ", "") +
+    ". Built with HTML, CSS & JS.";
 }
 
 /* ---------- Hire Me modal ---------- */
