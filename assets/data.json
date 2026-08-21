@@ -16,7 +16,7 @@
     { "label": "Email", "icon": "mail-svgrepo-com.svg", "url": "mailto:komangweda360@gmail.com" },
     { "label": "Reddit", "icon": "reddit-svgrepo-com.svg", "url": "https://www.reddit.com/user/Emotional-Age-2743/" }
   ],
-  "about": "It's a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+  "about": "I’m an fresh graduate Informatics student at Universitas Udayana with a strong interest in web development. I enjoy building functional, responsive, and user-friendly web applications while continuously improving my skills in modern web technologies. Throughout my academic and personal projects, I have gained experience working with technologies such as React, Laravel, JavaScript, PHP, and Python. I also have experience developing an AI model as part of my final thesis, which gave me additional exposure to machine learning and model development. I’m passionate about learning new technologies, solving problems through code, and turning ideas into useful digital solutions.",
   "stacks": [
     { "name": "React", "icon": "react-svgrepo-com.svg" },
     { "name": "Angular", "icon": "angularjs-svgrepo-com.svg" },
@@ -26,70 +26,193 @@
     { "name": "PHP", "icon": "php01-svgrepo-com.svg" },
     { "name": "Laravel", "icon": "laravel-svgrepo-com.svg" },
     { "name": "TypeScript", "icon": "typescript-svgrepo-com.svg" },
-    { "name": "Tailwind CSS", "icon": "tailwind-css-svgrepo-com.svg" }
+    { "name": "Tailwind CSS", "icon": "tailwind-css-svgrepo-com.svg" },
+    { "name": "Python", "icon": "python-svgrepo-com.svg" },
+    { "name": "JavaScript", "icon": "javascript-svgrepo-com.svg" },
+    { "name": "Flutter", "icon": "flutter-svgrepo-com.svg" },
+    { "name": "Dart", "icon": "dart-svgrepo-com.svg" },
+    { "name": "Kotlin", "icon": "kotlin-svgrepo-com.svg"},
+    { "name": "Firebase", "icon": "firebase-svgrepo-com.svg"},
+    { "name": "Flask", "icon": "flask-svgrepo-com.svg"},
+    { "name": "Bootstrap", "icon": "bootstrap-svgrepo-com.svg"},
+    { "name": "Docker", "icon": "docker-svgrepo-com.svg"},
+    { "name": "PostgreSQL", "icon": "postgres-svgrepo-com.svg"},
+    { "name": "Streamlit", "icon": "streamlit-svgrepo-com.svg"}
   ],
   "experience": [
     {
-      "role": "Junior Frontend Developer",
-      "company": "PT Digital Nusantara",
-      "period": "April 2025 - Present",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal."
-    },
-    {
-      "role": "Android Chort",
-      "company": "Bangkit Academy",
-      "period": "April 2024 - September 2024",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal."
+      "role": "Android Chort (MBKM)",
+      "company": "PT. Dicoding Akademi Indonesia",
+      "period": "September 2024 - Desember 2024",
+      "description": "Completed an intensive 4-month Android development program through Instructor-Led Training (ILT) and hands-on learning, covering Android development from fundamental to intermediate levels. As the Project Manager for the capstone project, led a team of 7 members divided into 3 development teams, coordinating project planning, task distribution, and collaboration. Successfully developed a mood-tracking application integrated with AI to classify users' moods, combining Android development, backend integration, and AI-based mood classification into a unified application."
     },
     {
       "role": "QA Engineering Intern",
       "company": "PT. Sanata System",
-      "period": "April 2024 - September 2024",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal."
+      "period": "July 2024 - September 2024",
+      "description": "Joined the Engineering Division and supported a QA assigned to a team consisting of 5 developers and 1 QA across 5 sprint cycles. Under the QA's guidance, created and executed test cases and used JIRA to identify, reproduce, report, and document UI- and API-level bugs, including detailed reproduction steps to help developers understand and resolve issues. Developed an end-to-end automated testing suite using Cypress.js, automating more than 10 previously manual test cases for a healthcare application developed for Dinas Kesehatan Kabupaten Badung."
+    },
+    {
+      "role": "Fullstack Web Developer Intern",
+      "company": "Sandatindo",
+      "period": "September 2021 - November 2021",
+      "description": "Participated in a hands-on Full-Stack Web Development training program at Sandatindo, an IT solutions company, focusing on building web applications using PHP Native, MySQL, and AJAX. Collaborated with a team of 3 interns to design, develop, and complete a web application as part of the training program, gaining practical experience in both frontend and backend development, database integration, and asynchronous data communication. Successfully completed the assigned project through effective teamwork, problem-solving, and task coordination."
     }
   ],
   "education": [
     {
       "degree": "Bachelor of Science in Computer Science",
       "school": "Udayana University",
-      "period": "August 2021 - August 2025",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal."
+      "period": "September 2022 - July 2026",
+      "description": "Completed a 4-year undergraduate program in Informatics with a focus on software development and machine learning. Actively contributed to the Engineering Division of the Student Innovation Centre (SIC), an organization focused on developing the skills and talents of Informatics students. Collaborated with 3 developers to develop and maintain the organization's official website, worked closely with the UI/UX team, and managed 4 SIC clubs to support student skill development. Throughout my studies, I focused on designing and developing web and mobile applications and conducting research in Machine Learning, particularly in Music Information Retrieval (MIR)."
     }
   ],
   "projects": [
     {
-      "title": "Personal Project",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal",
+      "title": "Personal Projects",
+      "description": "This is a collection of personal projects I have worked on, along with selected projects developed as part of my university coursework. Some were created out of curiosity and personal interest, while others provided opportunities to apply and strengthen my technical skills. I hope you enjoy exploring them.",
       "url": null,
       "media": null
     },
     {
-      "title": "Personal Project",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal",
-      "url": "#",
+      "title": "Deep Music | 2025",
+      "description": "Deep Music is a web-based application for music mood classification and music recommendation based on user mood, favorite genres, and favorite artists.",
+      "url": "https://github.com/wedawesnawa/frontend-deep-music",
       "media": {
         "type": "gif",
         "src": "https://raw.githubusercontent.com/wedawesnawa/frontend-deep-music/main/public/Video-Project-10.gif",
         "alt": "Project preview GIF",
-        "placeholder": "project 1"
+        "placeholder": "deep music"
       },
       "tags": [
-        { "name": "React", "icon": "react-svgrepo-com.svg" },
-        { "name": "Typescript", "icon": "typescript-svgrepo-com.svg" },
-        { "name": "MySQL", "icon": "mysql-svgrepo-com.svg" }
+        { "name": "Laravel", "icon": "laravel-svgrepo-com.svg" },
+        { "name": "Tailwind CSS", "icon": "tailwind-css-svgrepo-com.svg" },
+        { "name": "PHP", "icon": "php01-svgrepo-com.svg" },
+        { "name": "Firebase", "icon": "firebase-svgrepo-com.svg" },
+        { "name": "Python", "icon": "python-svgrepo-com.svg"},
+        { "name": "Flask", "icon": "flask-svgrepo-com.svg"}
       ]
     },
     {
-      "title": "Personal Project",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal",
-      "url": "#",
+      "title": "Automatic Scheduling Using a Genetic Algorithm",
+      "description": "The project aims to replace traditional printed menus with a digital ordering system. Customers can browse the menu, place orders directly through the web application, and submit their orders without waiting for a waiter. The cashier is responsible for managing incoming orders, processing transactions, and serving customers, simplifying restaurant operations through a centralized system.",
+      "url": "https://github.com/wedawesnawa/automatic-scheduling-genetic-algorithm",
       "media": {
         "type": "gif",
-        "src": "",
+        "src": "https://raw.githubusercontent.com/wedawesnawa/automatic-scheduling-genetic-algorithm/main/Video-Project-1.gif",
         "alt": "Project preview GIF",
-        "placeholder": "project 1"
+        "placeholder": "scheduling"
       },
-      "tags": []
+      "tags": [
+        { "name": "Python", "icon": "python-svgrepo-com.svg"},
+        { "name": "Streamlit", "icon": "streamlit-svgrepo-com.svg"}
+      ]
+    },
+        {
+      "title": "E-Market Fish - Mobile Fishery Products Marketplace",
+      "description": "The project aims to replace traditional printed menus with a digital ordering system. Customers can browse the menu, place orders directly through the web application, and submit their orders without waiting for a waiter. The cashier is responsible for managing incoming orders, processing transactions, and serving customers, simplifying restaurant operations through a centralized system.",
+      "url": "https://github.com/wedawesnawa/fe_salers_market_fish",
+      "media": {
+        "type": "gif",
+        "src": "https://raw.githubusercontent.com/wedawesnawa/fe_salers_market_fish/main/assets/Video-Project-8.gif",
+        "alt": "Project preview GIF",
+        "placeholder": "market"
+      },
+      "tags": [
+        { "name": "Flutter", "icon": "flutter-svgrepo-com.svg"},
+        { "name": "Dart", "icon": "dart-svgrepo-com.svg"},
+        { "name": "Go", "icon": "go-svgrepo-com.svg"},
+        { "name": "PostgreSQL", "icon": "postgres-svgrepo-com.svg"},
+        { "name": "Docker", "icon": "docker-svgrepo-com.svg"}
+      ]
+    },
+    {
+      "title": "Memospace: Management Activity | 2024",
+      "description": "Memospace is a web-based Management Activity designed to help students and lecturers manage their academic and campus activities more effectively.",
+      "url": "https://github.com/wedawesnawa/fe_sistem_notifikasi",
+      "media": {
+        "type": "gif",
+        "src": "https://raw.githubusercontent.com/wedawesnawa/fe_sistem_notifikasi/main/public/preview.gif",
+        "alt": "Project preview GIF",
+        "placeholder": "memospace"
+      },
+      "tags": [
+        { "name": "React", "icon": "react-svgrepo-com.svg"},
+        { "name": "TypeScript", "icon": "typescript-svgrepo-com.svg"},
+        { "name": "Tailwind CSS", "icon": "tailwind-css-svgrepo-com.svg"},
+        { "name": "MySQL", "icon": "mysql-svgrepo-com.svg"},
+        { "name": "Go", "icon": "go-svgrepo-com.svg"}
+      ]
+    },
+    {
+      "title": "Sistem Persuratan",
+      "description": "The application helps users record, manage, and organize incoming and outgoing letters digitally, making correspondence management more efficient and structured, especially when handling a large number of documents.",
+      "url": "https://github.com/wedawesnawa/fe_sistem_persuratan",
+      "media": {
+        "type": "gif",
+        "src": "https://raw.githubusercontent.com/wedawesnawa/fe_sistem_persuratan/main/src/assets/Video%20Project%2014.gif",
+        "alt": "Project preview GIF",
+        "placeholder": "memospace"
+      },
+      "tags": [
+        { "name": "React", "icon": "react-svgrepo-com.svg"},
+        { "name": "TypeScript", "icon": "typescript-svgrepo-com.svg"},
+        { "name": "Tailwind CSS", "icon": "tailwind-css-svgrepo-com.svg"},
+        { "name": "MySQL", "icon": "mysql-svgrepo-com.svg"},
+        { "name": "Laravel", "icon": "laravel-svgrepo-com.svg"}
+      ]
+    },
+    {
+      "title": "Hotel Management System: Receptionist Role",
+      "description": "This repository focuses specifically on the receptionist role and its related features. Other roles within the hotel management system are not implemented in this repository because they are developed separately by other team members.",
+      "url": "https://github.com/wedawesnawa/pbw_sistem_manajemen_hotel",
+      "media": {
+        "type": "gif",
+        "src": "https://raw.githubusercontent.com/wedawesnawa/pbw_sistem_manajemen_hotel/main/public/Video%20Project%2013.gif",
+        "alt": "Project preview GIF",
+        "placeholder": "memospace"
+      },
+      "tags": [
+        { "name": "Laravel", "icon": "laravel-svgrepo-com.svg"},
+        { "name": "Bootstrap", "icon": "bootstrap-svgrepo-com.svg"},
+        { "name": "MySQL", "icon": "mysql-svgrepo-com.svg"},
+        { "name": "PHP", "icon": "php01-svgrepo-com.svg"}
+      ]
+    },
+    {
+      "title": "Library Book Borrowing System",
+      "description": "Library Book Borrowing System is a web-based application designed to digitize and simplify the book borrowing process in an offline library.",
+      "url": "https://github.com/wedawesnawa/sistem-peminjaman-buku",
+      "media": {
+        "type": "gif",
+        "src": "https://raw.githubusercontent.com/wedawesnawa/sistem-peminjaman-buku/main/public/Video%20Project%2012.gif",
+        "alt": "Project preview GIF",
+        "placeholder": "memospace"
+      },
+      "tags": [
+        { "name": "Laravel", "icon": "laravel-svgrepo-com.svg"},
+        { "name": "Bootstrap", "icon": "bootstrap-svgrepo-com.svg"},
+        { "name": "MySQL", "icon": "mysql-svgrepo-com.svg"},
+        { "name": "PHP", "icon": "php01-svgrepo-com.svg"},
+        { "name": "Docker", "icon": "docker-svgrepo-com.svg"}
+      ]
+    },
+    {
+      "title": "Restaurant Service App",
+      "description": "The project aims to replace traditional printed menus with a digital ordering system. Customers can browse the menu, place orders directly through the web application, and submit their orders without waiting for a waiter. The cashier is responsible for managing incoming orders, processing transactions, and serving customers, simplifying restaurant operations through a centralized system.",
+      "url": "https://github.com/wedawesnawa/app-restaurant-service",
+      "media": {
+        "type": "gif",
+        "src": "https://raw.githubusercontent.com/wedawesnawa/app-restaurant-service/main/Video%20Project%202%20(2).gif",
+        "alt": "Project preview GIF",
+        "placeholder": "memospace"
+      },
+      "tags": [
+        { "name": "Bootstrap", "icon": "bootstrap-svgrepo-com.svg"},
+        { "name": "MySQL", "icon": "mysql-svgrepo-com.svg"},
+        { "name": "PHP", "icon": "php01-svgrepo-com.svg"},
+        { "name": "JavaScript", "icon": "javascript-svgrepo-com.svg"}
+      ]
     }
   ]
 }
