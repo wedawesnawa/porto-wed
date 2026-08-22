@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light dark;
   --bg: #ffffff;
   --ink: #111111;
   --ink-soft: #4b4b4b;
@@ -10,7 +11,7 @@
   --cta-bg: #111111;
   --cta-bg-hover: #000000;
   --cta-text: #ffffff;
-  --media-bg: #dcdcda;
+  --media-bg: #111111;
   --card-bg: #ffffff;
 
   --font-display: "Fraunces", "Georgia", serif;
@@ -36,7 +37,9 @@
     --card-bg: #1b1b1d;
   }
 
-  .project-tag img {
+  .project-tag img,
+  .nav-link svg,
+  .nav-link img {
     filter: invert(1);
   }
 }
@@ -197,8 +200,8 @@ button { font-family: inherit; }
 .btn-hire {
   appearance: none;
   border: 1px solid var(--ink);
-  background: var(--ink);
-  color: #fff;
+  background: var(--cta-bg);
+  color: var(--cta-text);
   font-size: 0.82rem;
   font-weight: 600;
   padding: 0.6rem 1.3rem;
@@ -207,7 +210,7 @@ button { font-family: inherit; }
   transition: transform 0.15s ease, background 0.15s ease;
 }
 .btn-hire:hover {
-  background: #000;
+  background: var(--cta-bg-hover);
   transform: translateY(-1px);
 }
 .btn-hire:active { transform: translateY(0); }
@@ -261,7 +264,7 @@ button { font-family: inherit; }
   width: 22px;
   height: 22px;
   border-radius: 5px;
-  background: var(--ink);
+  background: var(--chip-bg);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -297,7 +300,7 @@ button { font-family: inherit; }
   width: 46px;
   height: 46px;
   border-radius: 10px;
-  background: var(--ink);
+  background: var(--chip-bg);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -312,7 +315,7 @@ button { font-family: inherit; }
   filter: invert(1);
 }
 .stack-chip[data-light="true"] {
-  background: var(--surface);
+  background: var(--chip-bg);
   border: 1px solid var(--line);
 }
 .stack-chip[data-light="true"] svg,
@@ -403,7 +406,7 @@ button { font-family: inherit; }
   width: 100%;
   min-height: 340px;
   border-radius: 6px;
-  background: #111;
+  background: var(--media-bg);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -448,7 +451,7 @@ button { font-family: inherit; }
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--ink);
-  background: #fff;
+  background: var(--card-bg);
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
 .project-tag:hover {
