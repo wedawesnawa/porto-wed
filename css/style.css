@@ -1,8 +1,3 @@
-/* ============================================
-   Portfolio — Weda Wesnawa
-   Minimal editorial black & white system
-   ============================================ */
-
 :root {
   --bg: #ffffff;
   --ink: #111111;
@@ -10,6 +5,13 @@
   --line: #e6e6e6;
   --accent: #22c55e;
   --surface: #f6f6f5;
+
+  --chip-bg: #111111;
+  --cta-bg: #111111;
+  --cta-bg-hover: #000000;
+  --cta-text: #ffffff;
+  --media-bg: #dcdcda;
+  --card-bg: #ffffff;
 
   --font-display: "Fraunces", "Georgia", serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -20,10 +22,26 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  /* Intentionally kept light — design is light-mode by brief */
+  :root {
+    --bg: #111113;
+    --ink: #f2f2f0;
+    --ink-soft: #a3a3a1;
+    --line: #2a2a2c;
+    --surface: #1b1b1d;
+
+    --cta-bg: #f2f2f0;
+    --cta-bg-hover: #ffffff;
+    --cta-text: #111113;
+    --media-bg: #2a2a2c;
+    --card-bg: #1b1b1d;
+  }
+
+  .project-tag img {
+    filter: invert(1);
+  }
 }
 
-* { box-sizing: border-box; }
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent;}
 
 html {
   scroll-behavior: smooth;
@@ -51,6 +69,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  -webkit-touch-callout: none;
 }
 
 img, svg { display: block; max-width: 100%; }
@@ -696,6 +715,8 @@ button { font-family: inherit; }
 @media (max-width: 480px) {
   .notfound-numbers { gap: 0.4rem; }
   .notfound-avatar { border-width: 4px; }
+  .notfound-btn { padding: 0.7rem 1.2rem; font-size: 0.7rem}
+  .notfound-btn img { width: 16px; height: 16px;}
 }
 
 @media (max-width: 400px) {
