@@ -7,6 +7,7 @@
   --accent: #22c55e;
   --surface: #f6f6f5;
 
+  --btn-close: #111111;
   --chip-bg: #111111;
   --cta-bg: #111111;
   --cta-bg-hover: #000000;
@@ -30,6 +31,7 @@
     --line: #2a2a2c;
     --surface: #1b1b1d;
 
+    --btn-close: #111111;
     --cta-bg: #f2f2f0;
     --cta-bg-hover: #ffffff;
     --cta-text: #111113;
@@ -604,7 +606,7 @@ button { font-family: inherit; }
   border-radius: 50%;
   border: none;
   background: rgba(255, 255, 255, 0.92);
-  color: var(--ink);
+  color: var(--btn-close);
   font-size: 1.25rem;
   line-height: 1;
   cursor: pointer;

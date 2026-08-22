@@ -337,11 +337,10 @@ function renderFooter(profile) {
 function initHireModal() {
   const trigger = document.getElementById("hero-cta");
   const modal = document.getElementById("hire-modal");
-  if (!trigger || !modal) return; // page has no hero / no modal (e.g. experience.html, projects.html)
+  if (!trigger || !modal) return; 
 
   const openModal = () => {
     modal.hidden = false;
-    // next frame so the transition from opacity:0 actually animates
     requestAnimationFrame(() => modal.classList.add("is-open"));
     document.body.style.overflow = "hidden";
   };
@@ -349,7 +348,6 @@ function initHireModal() {
   const closeModal = () => {
     modal.classList.remove("is-open");
     document.body.style.overflow = "";
-    // wait for the fade-out transition (0.2s) before fully hiding
     setTimeout(() => {
       modal.hidden = true;
     }, 200);
