@@ -75,6 +75,23 @@
       "media": null
     },
     {
+      "title": "Internconnect | 2025",
+      "description": "Internconnect was developed to digitize the internship monitoring process, which was previously largely manual. The system provides features for managing logbooks, daily activities, supervisor or mentor verification, monitoring and evaluation submissions, sharing logbooks with other users, profile management, role change requests, and online meetings.",
+      "url": "https://github.com/wedawesnawa/internconnect-frontend",
+      "media": {
+        "type": "gif",
+        "src": "https://raw.githubusercontent.com/wedawesnawa/frontend-deep-music/main/public/assets/images/Video-Project-18-1.gif",
+        "alt": "Project preview GIF",
+        "placeholder": "internconnect"
+      },
+      "tags": [
+        { "name": "Angular", "icon": "angularjs-svgrepo-com.svg" },
+        { "name": "Tailwind CSS", "icon": "tailwind-css-svgrepo-com.svg" },
+        { "name": "C#", "icon": "dot-net-svgrepo-com.svg" },
+        { "name": "Microsoft SQL Server", "icon": "mysql-svgrepo-com.svg" }
+      ]
+    },
+    {
       "title": "Deep Music | 2025",
       "description": "Deep Music is a web-based application for music mood classification and music recommendation based on user mood, favorite genres, and favorite artists.",
       "url": "https://github.com/wedawesnawa/frontend-deep-music",
@@ -95,7 +112,7 @@
     },
     {
       "title": "Automatic Scheduling Using a Genetic Algorithm | 2025",
-      "description": "The project aims to replace traditional printed menus with a digital ordering system. Customers can browse the menu, place orders directly through the web application, and submit their orders without waiting for a waiter. The cashier is responsible for managing incoming orders, processing transactions, and serving customers, simplifying restaurant operations through a centralized system.",
+      "description": "This project was developed as part of a university research assignment to evaluate the effectiveness of the Genetic Algorithm (GA) in solving the university course timetabling problem.",
       "url": "https://github.com/wedawesnawa/automatic-scheduling-genetic-algorithm",
       "media": {
         "type": "gif",
