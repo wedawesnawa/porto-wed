@@ -232,6 +232,23 @@
       ]
     },
     {
+      "title": "Hotel Reservation Web Application | 2022",
+      "description": "DaHotel is a hotel reservation web application developed using Native PHP and MySQL as part of the final practical examination during vocational high school (SMK). The project was built to fulfill the requirements of creating a hotel reservation system with three user roles: Guest, Receptionist, and Administrator. The system focuses on online room reservations without implementing an online payment gateway, following the official UKK project specifications.",
+      "url": "https://github.com/wedawesnawa/web-app-pemesanan-hotel",
+      "media": {
+        "type": "gif",
+        "src": "https://raw.githubusercontent.com/wedawesnawa/web-app-pemesanan-hotel/main/Video-Project-19.gif",
+        "alt": "Project preview GIF",
+        "placeholder": "dahotel"
+      },
+      "tags": [
+        { "name": "Bootstrap", "icon": "bootstrap-svgrepo-com.svg"},
+        { "name": "MySQL", "icon": "mysql-svgrepo-com.svg"},
+        { "name": "PHP", "icon": "php01-svgrepo-com.svg"},
+        { "name": "JavaScript", "icon": "javascript-svgrepo-com.svg"}
+      ]
+    },
+    {
       "title": "Restaurant Service App | 2021",
       "description": "The project aims to replace traditional printed menus with a digital ordering system. Customers can browse the menu, place orders directly through the web application, and submit their orders without waiting for a waiter. The cashier is responsible for managing incoming orders, processing transactions, and serving customers, simplifying restaurant operations through a centralized system.",
       "url": "https://github.com/wedawesnawa/app-restaurant-service",
