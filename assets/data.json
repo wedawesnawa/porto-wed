@@ -197,7 +197,7 @@
       ]
     },
     {
-      "title": "Hotel Management System: Receptionist Role | 2023",
+      "title": "Hotel Management System: Receptionist Role | 2024",
       "description": "This repository focuses specifically on the receptionist role and its related features. Other roles within the hotel management system are not implemented in this repository because they are developed separately by other team members.",
       "url": "https://github.com/wedawesnawa/pbw_sistem_manajemen_hotel",
       "media": {
@@ -242,9 +242,9 @@
         "placeholder": "dahotel"
       },
       "tags": [
+        { "name": "PHP", "icon": "php01-svgrepo-com.svg"},
         { "name": "Bootstrap", "icon": "bootstrap-svgrepo-com.svg"},
         { "name": "MySQL", "icon": "mysql-svgrepo-com.svg"},
-        { "name": "PHP", "icon": "php01-svgrepo-com.svg"},
         { "name": "JavaScript", "icon": "javascript-svgrepo-com.svg"}
       ]
     },
