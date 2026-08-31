@@ -7,7 +7,7 @@
   ],
   "profile": {
     "greeting": "Halo, I'm Weda Wesnawa",
-    "role": "Junior Frontend Developer",
+    "role": "Junior Full-Stack Developer",
     "cta": "Hire me"
   },
   "contact": [
@@ -22,7 +22,7 @@
     { "name": "Angular", "icon": "angularjs-svgrepo-com.svg" },
     { "name": "Java", "icon": "java-svgrepo-com.svg" },
     { "name": "MySQL", "icon": "mysql-svgrepo-com.svg" },
-    { "name": ".NET", "icon": "dot-net-svgrepo-com.svg" },
+    { "name": "ASP .NET", "icon": "dot-net-svgrepo-com.svg" },
     { "name": "PHP", "icon": "php01-svgrepo-com.svg" },
     { "name": "Laravel", "icon": "laravel-svgrepo-com.svg" },
     { "name": "TypeScript", "icon": "typescript-svgrepo-com.svg" },
@@ -69,7 +69,7 @@
   ],
   "projects": [
     {
-      "title": "Personal Projects",
+      "title": null,
       "description": "This is a collection of personal projects I have worked on, along with selected projects developed as part of my university coursework. Some were created out of curiosity and personal interest, while others provided opportunities to apply and strengthen my technical skills. I hope you enjoy exploring them.",
       "url": null,
       "media": null
@@ -87,7 +87,7 @@
       "tags": [
         { "name": "Angular", "icon": "angularjs-svgrepo-com.svg" },
         { "name": "Tailwind CSS", "icon": "tailwind-css-svgrepo-com.svg" },
-        { "name": "C#", "icon": "dot-net-svgrepo-com.svg" },
+        { "name": "ASP .NET", "icon": "dot-net-svgrepo-com.svg" },
         { "name": "Microsoft SQL Server", "icon": "mysql-svgrepo-com.svg" }
       ]
     },
@@ -127,7 +127,7 @@
     },
     {
       "title": "E-Market Fish - Mobile Fishery Products Marketplace | 2025",
-      "description": "The project aims to replace traditional printed menus with a digital ordering system. Customers can browse the menu, place orders directly through the web application, and submit their orders without waiting for a waiter. The cashier is responsible for managing incoming orders, processing transactions, and serving customers, simplifying restaurant operations through a centralized system.",
+      "description": "A mobile e-commerce application designed to help customers discover, browse, and order fresh and frozen fishery products. The application provides a simple and convenient shopping experience, from exploring products and managing a cart to placing orders and managing delivery information.",
       "url": "https://github.com/wedawesnawa/fe_salers_market_fish",
       "media": {
         "type": "gif",
