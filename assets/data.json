@@ -75,6 +75,22 @@
       "media": null
     },
     {
+      "title": "ReyongSynth | 2026",
+      "description": "ReyongSynth is a research project focused on the synthesis of traditional Balinese Reyong instrument sounds using a Variational Autoencoder (VAE).",
+      "url": "https://github.com/wedawesnawa/frontend-vae-app",
+      "media": {
+        "type": "gif",
+        "src": "https://raw.githubusercontent.com/wedawesnawa/frontend-vae-app/main/public/Video-Project-21.gif",
+        "alt": "Project preview GIF",
+        "placeholder": "reyong"
+      },
+      "tags": [
+        { "name": "Angular", "icon": "angularjs-svgrepo-com.svg" },
+        { "name": "Tailwind CSS", "icon": "tailwind-css-svgrepo-com.svg" },
+        { "name": "Python", "icon": "python-svgrepo-com.svg" }
+      ]
+    },
+    {
       "title": "Internconnect | 2025",
       "description": "Internconnect was developed to digitize the internship monitoring process, which was previously largely manual. The system provides features for managing logbooks, daily activities, supervisor or mentor verification, monitoring and evaluation submissions, sharing logbooks with other users, profile management, role change requests, and online meetings.",
       "url": "https://github.com/wedawesnawa/internconnect-frontend",
