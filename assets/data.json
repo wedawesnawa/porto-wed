@@ -87,7 +87,8 @@
       "tags": [
         { "name": "Angular", "icon": "angularjs-svgrepo-com.svg" },
         { "name": "Tailwind CSS", "icon": "tailwind-css-svgrepo-com.svg" },
-        { "name": "Python", "icon": "python-svgrepo-com.svg" }
+        { "name": "Python", "icon": "python-svgrepo-com.svg" },
+        { "name": "Flask", "icon": "flask-svgrepo-com.svg" }
       ]
     },
     {
