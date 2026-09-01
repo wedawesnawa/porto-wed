@@ -104,7 +104,8 @@
         { "name": "Angular", "icon": "angularjs-svgrepo-com.svg" },
         { "name": "Tailwind CSS", "icon": "tailwind-css-svgrepo-com.svg" },
         { "name": "ASP .NET", "icon": "dot-net-svgrepo-com.svg" },
-        { "name": "Microsoft SQL Server", "icon": "mysql-svgrepo-com.svg" }
+        { "name": "Microsoft SQL Server", "icon": "mysql-svgrepo-com.svg" },
+        { "name": "Docker", "icon": "docker-svgrepo-com.svg"}
       ]
     },
     {
