@@ -289,6 +289,36 @@ function renderFilterBanner(activeTag, resultCount) {
   filterWrap.appendChild(banner);
 }
 
+function injectProjectsStructuredData(projects) {
+  const existing = document.getElementById("projects-jsonld");
+  if (existing) existing.remove();
+  if (!projects.length) return;
+ 
+  const itemList = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: projects.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "CreativeWork",
+        name: p.title,
+        description: p.description,
+        ...(p.githubUrl ? { codeRepository: p.githubUrl, url: p.githubUrl } : {}),
+        ...(p.tags && p.tags.length
+          ? { keywords: p.tags.map((t) => t.name).join(", ") }
+          : {}),
+      },
+    })),
+  };
+ 
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.id = "projects-jsonld";
+  script.textContent = JSON.stringify(itemList);
+  document.head.appendChild(script);
+}
+
 function renderProjects(projects) {
   const wrap = document.getElementById("projects-grid");
   if (!wrap) return;
@@ -318,6 +348,8 @@ function renderProjects(projects) {
   }
 
   list.forEach((p) => wrap.appendChild(buildProjectBlock(p)));
+  
+  if (!activeTag) injectProjectsStructuredData(projects);
 }
 
 function renderFooter(profile) {
